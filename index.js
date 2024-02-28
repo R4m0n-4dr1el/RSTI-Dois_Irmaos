@@ -4,12 +4,12 @@ var nome = prompt("Escreva qual é o seu nome?")
 var cor = prompt("Qual a sua cor favorita?")
 var frase = console.log("A cor favorita do " + nome + " é " + cor + ".")
 
-Exercicio Aumenta letra
+//Exercicio Aumenta letra
 var frase = prompt("Digite uma frase");
 var frase2 = frase.toUpperCase();
 console.log(frase2);
 
-
+//Exercicio aumentaLetra
 var substituto = prompt("Digite uma frase boa");
 var novaSubstituto = substituto.replaceAll("o", "i");
 console.log(novaSubstituto);
@@ -237,15 +237,102 @@ const copiaListaDeNomes = [...listaDeNomes]
 
 console.log(copiaListaDeNomes) */
 
-const pessoa = {
-    nome: 'Paula',
-    idade: 18,
-    genero: 'eletrônica',
-}
-
-funtion = adicionais(pessoa{
-
+/* const pessoa = {
+   nome: 'Paula',
+   idade: 18,
+   genero: 'eletrônica',
 }
 
 console.log("O nome da pessoa é ", pessoa.nome, ", ela tem ", pessoa.idade, "anos e gosta muito de", pessoa.genero);
 
+function exercicio4(objetoPessoa, arrayComidas, objetoMelhorAmigo){
+   var novoObjeto = {...objetoPessoa, comidasPreferidas: arrayComidas, melhorAmigo: objetoMelhorAmigo};
+
+   console.log('O nome da pessoa é' ,novoObjeto.nome , 'e suas comidas preferidas são:' ,novoObjeto.comidasPreferidas[0], novoObjeto.comidasPreferidas[1], novoObjeto.comidasPreferidas[2],  'Seu melhor amigo se chama' ,novoObjeto.melhorAmigo.nome, "e tem" ,novoObjeto.melhorAmigo.idade, "anos.");
+}
+
+exercicio4(pessoa, ["arroz", "feijao", "carne"], {nome: "joao", idade: 10}); 
+*/
+
+/* let condicao1 = true
+
+if(condicao1){
+    //Como o valor da condicao é true,
+    //O código desse bloco é executado
+    console.log('Entrei no IF 1!')
+}
+ 
+let condicao2 = false
+
+if(condicao2){
+    //Como o valor da condicao é false,
+    //O código desse bloco é executado
+    console.log('Entrei no IF 2!')
+} */
+
+/* function numeros(num1, num2){
+
+    if(num1 === num2)
+    console.log("verdadeiro")
+    else(console.log("False"))
+}
+
+numeros(prompt("Digite um numero pro Num1") , prompt("Digite um numero pro Num2")); */
+
+/* function exercicio(nome, idade) {
+    if (idade >= 18) {
+        return `${nome}, voce pode dirigir`;
+    }
+}
+
+console.log(exercicio(prompt("Digite seu nome"), prompt("Digite sua idade"))); */
+
+/* let condicao = false
+
+if(condicao){
+    console.log("Entrei no IF")
+} else {
+    //Como o valor da condicao é false,
+    //O código desse bloco é executado
+    console.log('Entrei no ELSE!')
+} */
+
+/* function numeros(num1, num2){
+
+    if(num1 === num2){
+    return "São iguais"
+    }else{
+    return "São diferentes"}
+}
+
+console.log(numeros(prompt("Digite um numero pro Num1") , prompt("Digite um numero pro Num2"))); */
+
+/* let condicao1 = false
+let condicao2 = true
+
+if(condicao1){
+    console.log('Entrei no IF 1!')
+}else{
+    //Como o valor da condicional é false
+    //O código de ELSE será executado
+    if(condicao2) {
+    //Como o valor da condicao2 é true,
+    //executaremos esse código
+        console.log("Entrei no IF 2!")
+    }
+} */
+
+function numeros(num1, num2){
+
+    if(num1 > num2){
+        return "Maior"
+    
+}else(num1===num2);{
+        return "São iguais"
+
+}if(num1 < num2);
+    return "É menor"
+}
+
+
+console.log(numeros(prompt("Digite um numero pro Num1") , prompt("Digite um numero pro Num2")));
