@@ -322,17 +322,136 @@ if(condicao1){
     }
 } */
 
-function numeros(num1, num2){
+/* function numeros(num1, num2){
 
     if(num1 > num2){
         return "Maior"
     
-}else(num1===num2);{
+}else if(num1===num2){
         return "São iguais"
 
-}if(num1 < num2);
-    return "É menor"
+}else{
+    return "É menor"}
+}
+console.log(numeros(prompt("Digite um numero pro Num1") , prompt("Digite um numero pro Num2"))); */
+
+/* let paisDeOrigem
+if (paisDeOrigem === 'Brasil'){
+console.log('Brasileiro')
+}else if (paisDeOrigem === 'EUA'){
+    console.log('Norte Americano')
+}else if (paisDeOrigem === 'Inglaeterra'){
+    console.log('Inglês')
+}else if (paisDeOrigem === 'França'){
+    console.log('Françês')
+}else if (paisDeOrigem === 'Itália'){
+    console.log('Italiano')
+}else if (paisDeOrigem === 'Canadá'){
+    console.log('Canadense')  
+} else {
+    console.log("Nacionalidade não enconntrada")
+}
+ */
+/* let paisDeOrigem
+switch (paisDeOrigem) {
+    case 'Brasil':
+        console.log('Brasileiro')
+        break
+    case 'EUA':
+            console.log('Norte Americano')
+        break
+    case 'Inglaterra':
+            console.log('Inglês')
+        break
+    default:
+        console.log('Nacionalidade não encontrada')
+        break;
+} */
+
+/* var pokemon
+var pokemon = prompt("Escolha 1 pra Bulbassauro, 2 pra Charmander e 3 pra Squirtle");
+
+switch (pokemon) {
+    case '1':
+        console.log('Planta e veneno')
+        break
+    case '2':
+        console.log('Fogo')
+        break
+    case '3':
+        console.log('Água')
+        break
+    default:
+        console.log('Pokemon não encontrado')
+        break;
+} */
+
+/* let condicao1 = true
+let condicao2 = false
+
+if(condicao1 && condicao2){
+//Entra aqui se ambas forem true
 }
 
+if(!condicao1){
+//Entra aqui se condicao1 for false
+} */
+/* 
+function faculdade(ensinoMedio, idade, cursandoFaculdade) {
+    if (cursandoFaculdade === "sim") {
+        cursandoFaculdade = true;
+    } else { cursandoFaculdade = false }
+    if (ensinoMedio === "sim") {
+        ensinoMedio = true;
+    } else { ensinoMedio = false }
 
-console.log(numeros(prompt("Digite um numero pro Num1") , prompt("Digite um numero pro Num2")));
+    if ((idade >= 18) && (ensinoMedio) && !(cursandoFaculdade)) {
+        console.log('Parabéns, voce foi aceito!!!')
+    } else {
+        console.log('Foi mal, não poderemos aceitar voçê na nossa faculdade')
+    }
+}
+faculdade(prompt("Voçê conclui o Ensino Médio?"), prompt("Qual sua idade?"), prompt("Está cursando outra faculdade?")) */
+
+/* Exercício 1:
+
+Calculadora Simples; Crie uma função calculadora que recebe dois
+números e uma operação (soma, subtração, multiplicação ou divisão)
+como argumentos e retorna o resultado da operação. */
+
+/* function calculadora(num1, num2){
+    if(operacao === '1'){
+    console.log("A soma é: " ,soma)
+    }
+    else if(operacao === '2'){
+        console.log("A divisão é: ", divisao)
+    }
+    else if(operacao === '3'){
+        console.log("A subtração é: ", subtracao)
+    }else{
+        console.log("A multiplicação é: ", multiplicacao) 
+    }
+}
+
+num1 = Number(prompt("Digite um valor pra Num1"));
+num2 = Number(prompt("Digite um valor pra Num2"));
+
+var soma = (num1 + num2)
+var divisao = (num1 / num2)
+var subtracao = (num1 - num2)
+var multiplicacao = (num1 * num2)
+var operacao = prompt("Digite 1 pra somar, 2 pra dividir, 3 pra subtrair e 4 pra multiplicar");
+
+calculadora(); */
+
+/* Exercício 2:
+
+Média de Notas; Crie uma função calcularMedia que recebe um
+array de números (notas de um aluno) e retorna a média dessas notas. */
+
+function calcularMedia(num1, num2){
+    media = (num1 + num2) / 2
+    
+}
+    calcularMedia(num1 = Number(prompt("Digite a nota Num1", num2= Number(prompt("Digite a nota Num2")))));
+    console.log("A média é: ",media)
