@@ -1,4 +1,4 @@
-/*Exercicio 1 Leia nome
+/* Exercicio 1 Leia nome
 
 var nome = prompt("Escreva qual é o seu nome?")
 var cor = prompt("Qual a sua cor favorita?")
@@ -396,12 +396,12 @@ if(condicao1 && condicao2){
 if(!condicao1){
 //Entra aqui se condicao1 for false
 } */
-/* 
-function faculdade(ensinoMedio, idade, cursandoFaculdade) {
-    if (cursandoFaculdade === "sim") {
+
+/* function faculdade(ensinoMedio, idade, cursandoFaculdade) {
+    if (cursandoFaculdade === "sim" || cursandoFaculdade === "Sim") {
         cursandoFaculdade = true;
     } else { cursandoFaculdade = false }
-    if (ensinoMedio === "sim") {
+    if (ensinoMedio === "sim" || ensinoMedio === "Sim") {
         ensinoMedio = true;
     } else { ensinoMedio = false }
 
@@ -449,9 +449,33 @@ calculadora(); */
 Média de Notas; Crie uma função calcularMedia que recebe um
 array de números (notas de um aluno) e retorna a média dessas notas. */
 
-function calcularMedia(num1, num2){
-    media = (num1 + num2) / 2
-    
+/* function calcularMedia(num1, num2) {
+    media = (num1 + num2) / 2;
+
 }
-    calcularMedia(num1 = Number(prompt("Digite a nota Num1", num2= Number(prompt("Digite a nota Num2")))));
-    console.log("A média é: ",media)
+calcularMedia(Number(prompt('Nota 1:')), Number(prompt('Nota 2:')));
+console.log("A média é: ", media);  */
+
+function calculaArea(base, altura){
+    return base * altura;
+}
+
+function calculaAreaTotal(valores = []) {
+    var resultados = valores[0] + valores[1] + valores[2] + valores[3];
+    return resultados;
+}
+
+function calcularValores(valores = []) {
+    valores[0] = Number(valores[0]);
+    valores[1] = Number(valores[1]);
+
+    var areaCalculada = calculaArea(valores[0], valores[1])
+
+    var areaTotal = calculaAreaTotal([areaCalculada, areaCalculada, areaCalculada, areaCalculada]);
+    return areaTotal;
+}
+
+function pegaValores(){
+
+    return calcularValores([prompt('Digite a base: '), prompt('Digite a altura')]);
+}
