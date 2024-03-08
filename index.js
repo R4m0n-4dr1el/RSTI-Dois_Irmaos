@@ -455,7 +455,7 @@ array de números (notas de um aluno) e retorna a média dessas notas. */
 }
 calcularMedia(Number(prompt('Nota 1:')), Number(prompt('Nota 2:')));
 console.log("A média é: ", media);  */
-
+/* 
 function calculaArea(base, altura){
     return base * altura;
 }
@@ -478,4 +478,25 @@ function calcularValores(valores = []) {
 function pegaValores(){
 
     return calcularValores([prompt('Digite a base: '), prompt('Digite a altura')]);
-}
+} */
+
+/* Fazer panqueca
+
+Passo 1 - Logo de manha acorde, abrindo os olhos da cara, retirando a coberta que esta por cima de seu corpo, com voce deitado na cama.
+
+Passo 2 - Saia da posição de deitado e fique sentado na cama, depois fique de pé com os pés no chão, servindo como sustento para o resto do corpo.
+
+Passo 3 - Usando os pés para andar, va até o banheiro dando um passo de cada vez, chegando lá escove os dentes utilizando a escova de dentes, onde irá colocar a pasta de dentes nela, e esfregar nos dentes de sua boca.
+
+Passo 4 - Terminando, enxague a boca com agua da torneira, lave o rosto com água, em seguida ande até a cozinha com os pés. Onde procurara os ingredientes para fazer a panqueca. 
+
+Passo 5 - Olhara com os olhos os armarios e estantes, procurando ovo, banana, farinha de aveia e um prato.
+
+Passo 6 - Com isso em mãos dará inicio ao processo de preparo, onde a banana descascara, tirando sua casca e jogando no lixo, em seguida colocara ela no prato e esmagará com um garfo, que pegara da gaveta até virar uma pasta mole.
+
+Passo 7 - Após, quebrara a casca do ovo e colocara apenas a gema e a clara, sem colocar a casca, no prato, em seguida pegara a farinha de aveia e enchera uma colher com 30g colocando 3x no prato, com tudo junto mistura-ra até virar uma pasta mais densa.
+
+Passo 8 - Com essa pasta, colocara em uma frigideira que estara no fogão com o fogo acesso. Com a pasta no fogo ficara de olho para não deixar queimar, deixando por apenas 1 minuto e meio até virar a pasta com uma espatula, do outro lado.
+
+Passo 9 - Deixara por mais 1 minuto e meio e em seguida desligara o fogo do fogão, pegara a frigideira e 
+*/
