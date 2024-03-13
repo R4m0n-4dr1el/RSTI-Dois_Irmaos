@@ -412,8 +412,8 @@ if(!condicao1){
     }
 }
 faculdade(prompt("Voçê conclui o Ensino Médio?"), prompt("Qual sua idade?"), prompt("Está cursando outra faculdade?")) */
-
-/* Exercício 1:
+/*
+Exercício 1:
 
 Calculadora Simples; Crie uma função calculadora que recebe dois
 números e uma operação (soma, subtração, multiplicação ou divisão)
@@ -421,7 +421,7 @@ como argumentos e retorna o resultado da operação. */
 
 /* function calculadora(num1, num2){
     if(operacao === '1'){
-    console.log("A soma é: " ,soma)
+    co/* nsole.log("A soma é: " ,soma)
     }
     else if(operacao === '2'){
         console.log("A divisão é: ", divisao)
@@ -455,7 +455,7 @@ array de números (notas de um aluno) e retorna a média dessas notas. */
 }
 calcularMedia(Number(prompt('Nota 1:')), Number(prompt('Nota 2:')));
 console.log("A média é: ", media);  */
-/* 
+/*
 function calculaArea(base, altura){
     return base * altura;
 }
@@ -478,9 +478,9 @@ function calcularValores(valores = []) {
 function pegaValores(){
 
     return calcularValores([prompt('Digite a base: '), prompt('Digite a altura')]);
-} */
-
-/* Fazer panqueca
+}
+ 
+ Fazer panqueca
 
 Passo 1 - Logo de manha acorde, abrindo os olhos da cara, retirando a coberta que esta por cima de seu corpo, com voce deitado na cama.
 
@@ -500,3 +500,232 @@ Passo 8 - Com essa pasta, colocara em uma frigideira que estara no fogão com o 
 
 Passo 9 - Deixara por mais 1 minuto e meio e em seguida desligara o fogo do fogão, pegara a frigideira e 
 */
+
+
+/*Em JavaScript, os laços são estruturas que permitem executar um bloco de código várias vezes. Aqui está um exemplo simples de cada tipo de laço em JavaScript, com explicações:
+
+JavaScript*/
+/*
+// Laço for: Executa um bloco de código um número específico de vezes
+for (let i = 0; i < 5; i++) {
+  console.log('Número ' + i);
+}
+
+// Laço while: Executa um bloco de código enquanto uma condição especificada é verdadeira
+let j = 0;
+while (j < 5) {
+  console.log('Contagem: ' + j);
+  j++;
+}
+
+// Laço do...while: Executa um bloco de código uma vez, e depois continua executando enquanto a condição especificada é verdadeira
+let k = 0;
+do {
+  console.log('Valor: ' + k);
+  k++;
+} while (k < 5);
+
+// Laço for...in: Itera sobre as propriedades enumeráveis de um objeto
+const objeto = {a: 1, b: 2, c: 3};
+for (const prop in objeto) {
+  console.log('Propriedade ' + prop + ' tem o valor ' + objeto[prop]);
+}
+
+// Laço for...of: Itera sobre os valores de um objeto iterável, como arrays ou strings
+const array = ['a', 'b', 'c'];
+for (const valor of array) {
+  console.log('Valor: ' + valor);
+}
+*/
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+/*
+for: Utilizado para repetir um bloco de código um número definido de vezes. A estrutura consiste em três partes: inicialização (let i = 0), condição (i < 5), e incremento (i++).
+while: Executa o bloco de código enquanto a condição for verdadeira. A condição é avaliada antes da execução do bloco de código.
+do…while: Semelhante ao while, mas garante que o bloco de código seja executado pelo menos uma vez, pois a condição é avaliada após a execução do bloco.
+for…in: Itera sobre as propriedades de um objeto. É útil para percorrer chaves em um objeto literal.
+for…of: Itera sobre os valores de um objeto iterável, como arrays ou strings. É útil para percorrer os valores em uma coleção.
+*/
+
+/*
+// Jogo de adivinhação de números em JavaScript
+
+// Gera um número aleatório entre 1 e 100
+var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+
+// Número de tentativas que o jogador tem
+var tentativas = 10;
+
+// Array para armazenar as tentativas do jogador
+var tentativasJogador = [];
+
+// Função para jogar o jogo
+function jogar() {
+    // Enquanto ainda houver tentativas
+    while(tentativas > 0) {
+        // Pede ao jogador para adivinhar o número
+        var palpite = prompt("Adivinhe o número (entre 1 e 100):");
+
+        // Verifica se o palpite já foi feito
+        if(tentativasJogador.includes(palpite)) {
+            alert("Você já tentou esse número. Tente um número diferente.");
+            continue;
+        }
+
+        // Adiciona o palpite às tentativas do jogador
+        tentativasJogador.push(palpite);
+
+        // Verifica se o palpite está correto
+        if(palpite == numeroAleatorio) {
+            alert("Parabéns! Você adivinhou o número!");
+            break;
+        } else if(palpite < numeroAleatorio) {
+            alert("Muito baixo! Tente novamente.");
+        } else {
+            alert("Muito alto! Tente novamente.");
+        }
+
+        // Diminui o número de tentativas
+        tentativas--;
+        
+        // Se o jogador ficar sem tentativas
+        if(tentativas == 0) {
+            alert("Você ficou sem tentativas. O número era " + numeroAleatorio + ".");
+        }
+    }
+}
+
+// Inicia o jogo
+jogar();
+*/
+/*
+ let i = 0
+ while(i < 10) {
+    console.log(i)
+
+    i++
+ }
+*/
+/*
+let estomago = 0;
+
+while (estomago < 100) {
+    console.log("Quero comer mais coxinhas");
+    estomago = estomago + 10;
+}
+*/
+
+/*
+// Arte ASCII em JavaScript
+
+// Array de arte ASCII
+var arte
+var Arte1 = `
+    |   
+  .'|'. 
+ /.'|\ \
+ | /|'.|
+  \ |\/ 
+   \|/  
+      
+   `;
+
+arte = prompt("Digite um número")
+// Função para gerar arte ASCII
+function gerarArteASCII(numero) {
+    // Verifica se o número está dentro do intervalo
+    if (numero < 1 || numero > 10) {
+        console.log('Número inválido. Por favor, insira um número de 1 a 10.');
+        return;
+    }
+
+    // Exibe a arte ASCII correspondente
+    console.log(Arte1[numero - 1]);
+}
+
+// Teste a função com um número de 1 a 20
+gerarArteASCII(arte);
+*/
+
+
+/*
+// Programa para somar números em JavaScript
+
+var numeros = [];
+
+function solicitarNumeros() {
+    while(true) {
+        var numero = Number(prompt("Insira um número (ou '0' para parar):"));
+
+        if(numero == 0) {
+            break;
+        }
+        numeros.push(numero);
+    }
+    var soma = numeros.reduce(function(a, b) {
+        return a + b;
+    }, 0);
+
+    console.log("A soma dos números é: " + soma);
+}
+
+solicitarNumeros();
+*/
+
+/*
+function somarNumeros() {
+    let soma = 0;
+    let numero = 1;
+    while (numero !== 0) {
+        numero = Number(prompt("Digite um número (ou 0 para sair"));
+        soma += numero;
+    }
+    console.log("A soma dos números digitados é: ",soma);
+}
+somarNumeros();
+*/
+
+/*
+const numeros = [14,67,89,23]
+
+for(let i = 0; i < 5; i++){
+const elemento = numeros[i]
+console.log("elemento")
+}
+*/
+/*
+// Lista de 10 números
+var numeros = [12, 3, 7, 1, 9, 23, 8, 13, 5, 6];
+// Função para encontrar o maior número em uma lista
+function encontrarMaiorNumero(lista) {
+    return Math.max.apply(null, lista);
+}
+// Encontra e imprime o maior número
+var maiorNumero = encontrarMaiorNumero(numeros);
+console.log("O maior número é: " + maiorNumero);
+*/
+
+/*
+function valorMaior(array){
+    var numeroMaior = array[0];
+    for (let i = 0; i < array.lenght; i++) {
+    const element = array[i];
+    if(element > numeroMaior){
+        numeroMaior = element
+    }
+    }
+    return numeroMaior
+}
+var meuArray = [10,20,30,50,67,45,43]
+console.log(valorMaior(meuArray));
+
+*/
+somarNumeros(){
+    var numeros = []
+    numero = 1;
+    while(numero !== 0){
+        numero.(Number(prompt("Digite um numero(ou 0 para sair)")));
+        numeros.push(numero)
+    }
+}
