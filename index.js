@@ -537,8 +537,12 @@ for (const valor of array) {
   console.log('Valor: ' + valor);
 }
 */
+
+/*
 for (let i = 0; i < 10; i++) {
     console.log(i)
+
+    
 }
 /*
 for: Utilizado para repetir um bloco de código um número definido de vezes. A estrutura consiste em três partes: inicialização (let i = 0), condição (i < 5), e incremento (i++).
@@ -621,7 +625,7 @@ while (estomago < 100) {
 
 // Array de arte ASCII
 var arte
-var Arte1 = `
+function  Arte1()  {`
     |   
   .'|'. 
  /.'|\ \
@@ -629,7 +633,7 @@ var Arte1 = `
   \ |\/ 
    \|/  
       
-   `;
+   `};
 
 arte = prompt("Digite um número")
 // Função para gerar arte ASCII
@@ -721,11 +725,38 @@ var meuArray = [10,20,30,50,67,45,43]
 console.log(valorMaior(meuArray));
 
 */
-somarNumeros(){
+
+/*
+ function somarNumeros() {
     var numeros = []
+    var numero
     numero = 1;
-    while(numero !== 0){
-        numero.(Number(prompt("Digite um numero(ou 0 para sair)")));
-        numeros.push(numero)
+    while (numero !== 0) {
+        numero = (Number(prompt("Digite um numero(ou 0 para sair)")));
+        numeros.push(numero);
     }
-}
+    const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+    console.log(`A soma dos números digitados é: ${soma}`);
+  }
+  
+  // Chamar a função
+  somarNumeros();
+  */
+
+  /*
+  function somarNumerosComArray() {
+    const numeros = []; 
+    let numero = 1;
+      while (numero !== 0) {
+      numero = parseInt(prompt("Digite um número (ou 0 para sair): "));
+      numeros.push(numero);
+    }
+    const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+    console.log(`A soma dos números digitados é: ${soma}`);
+  }
+  
+  // Chamar a função
+  somarNumerosComArray();
+
+*/
+// UID = (z0o4r) Andrey, Gabriel, Maxuel, João, Ramon
