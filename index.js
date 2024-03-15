@@ -743,20 +743,35 @@ console.log(valorMaior(meuArray));
   somarNumeros();
   */
 
-  /*
-  function somarNumerosComArray() {
-    const numeros = []; 
-    let numero = 1;
-      while (numero !== 0) {
-      numero = parseInt(prompt("Digite um número (ou 0 para sair): "));
-      numeros.push(numero);
-    }
-    const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
-    console.log(`A soma dos números digitados é: ${soma}`);
+/*
+function somarNumerosComArray() {
+  const numeros = []; 
+  let numero = 1;
+    while (numero !== 0) {
+    numero = parseInt(prompt("Digite um número (ou 0 para sair): "));
+    numeros.push(numero);
   }
-  
-  // Chamar a função
-  somarNumerosComArray();
+  const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+  console.log(`A soma dos números digitados é: ${soma}`);
+}
+ 
+// Chamar a função
+somarNumerosComArray();
 
 */
 // UID = (z0o4r) Andrey, Gabriel, Maxuel, João, Ramon
+
+function gerarId() {
+    return Math.floor((50 + Math.random()) * 0x10000000).toString(16).substring(1);
+}
+
+function gerarIds(quantidade) {
+    var ids = [];
+    for (var i = 0; i < quantidade; i++) {
+        ids.push(gerarId(10));
+    }
+    return ids;
+}
+
+// Exemplo de uso:
+console.log(gerarIds(20)); 
